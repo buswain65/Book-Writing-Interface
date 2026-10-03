@@ -2,7 +2,9 @@ import sys
 import os
 
 # Force Python to recognize the root directory on Streamlit Cloud
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))import streamlit as st
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+import streamlit as st
 import json
 from services.demographic_analyzer import DemographicAnalyzer
 from services.agent_engine import AgentEngine
