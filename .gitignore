@@ -1,0 +1,12 @@
+# API Keys & Secrets
+.env
+config.py
+
+# Local Data & Cache
+data/
+__pycache__/
+.streamlit/
+
+# Python Virtual Environments
+venv/
+.venv/
