@@ -1,3 +1,9 @@
+import sys
+import os
+
+# Ensure root directory is on the import path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import json
 import concurrent.futures
 from openai import OpenAI
