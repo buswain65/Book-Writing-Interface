@@ -1,8 +1,10 @@
 import sys
 import os
 
-# Ensure root directory is on the import path
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# Ensure the root directory (parent of services/) is on sys.path BEFORE loading config
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if ROOT_DIR not in sys.path:
+    sys.path.insert(0, ROOT_DIR)
 
 import json
 import concurrent.futures
