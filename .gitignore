@@ -1,8 +1,7 @@
 # API Keys & Secrets
 .env
-config.py
 
-# Local Data & Cache
+# Local Data, Cache & Secrets
 data/
 __pycache__/
 .streamlit/
